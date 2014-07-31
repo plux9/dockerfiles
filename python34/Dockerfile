@@ -22,3 +22,4 @@ ENV PYENV_ROOT $HOME/.pyenv
 ENV PATH $PYENV_ROOT/bin:$PATH
 RUN eval "$(pyenv init -)"
 RUN ./.pyenv/bin/pyenv install 3.4.1
+RUN pyenv global 3.4.1
